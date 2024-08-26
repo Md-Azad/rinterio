@@ -52,52 +52,14 @@
         },
       };
     </script>
-
-    <style>
-      .bg-offwhite {
-        background: linear-gradient(
-          0deg,
-          rgb(255, 255, 255),
-          rgba(255, 255, 255, 0) 100%
-        );
-      }
-    </style>
   </head>
-  <body class="font-primary bg-offwhite">
+  <body class="font-primary bg-gray-50">
     <!-- header section starts here -->
-    <header>
+    <header class="bg-gray-100">
       <!-- navbar section starts here -->
-      <!-- TODO: responsiveness is not done -->
+
       <div class="navbar w-11/12 mx-auto">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a class="font-bold">Home</a></li>
-              <li><a class="text-gray">Services</a></li>
-              <li><a class="text-gray">Porfolio</a></li>
-              <li><a class="text-gray">Blogs</a></li>
-              <li><a class="text-gray">Contact Us</a></li>
-            </ul>
-          </div>
           <a class="btn btn-ghost text-3xl font-bold"
             ><i
               class="fa-solid fa-arrow-right w-8 h-8 bg-parrot text-center rounded-full -rotate-45"
@@ -116,12 +78,12 @@
         </div>
         <div class="navbar-end hidden md:inline-flex">
           <div
-            class="w-12 h-12 border border-black rounded-full flex justify-center items-center"
+            class="w-12 h-12 bg-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div
-            class="w-12 h-12 border mx-2 border-black rounded-full flex justify-center items-center"
+            class="w-12 h-12 mx-2 bg-white rounded-full flex justify-center items-center"
           >
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
@@ -133,11 +95,39 @@
             ></i
           ></a>
         </div>
+        <div class="dropdown inline-block navbar-end text-right md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a class="font-bold">Home</a></li>
+            <li><a class="text-gray">Services</a></li>
+            <li><a class="text-gray">Porfolio</a></li>
+            <li><a class="text-gray">Blogs</a></li>
+            <li><a class="text-gray">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
       <!-- navbar section ends here -->
 
       <!-- Bannar section starts here -->
-      <div class="flex flex-col items-center my-10 space-y-4">
+      <div class="flex flex-col items-center my-10 space-y-4 pb-8">
         <div>
           <img src="./assets/banner.png" alt="" />
         </div>
@@ -486,27 +476,27 @@
           class="w-11/12 pb-8 md:w-3/6 mx-auto space-y-4 md:space-y-0 md:grid grid-cols-2 gap-4"
         >
           <input
-            class="p-2 rounded-xl w-full"
+            class="p-2 rounded-xl w-full bg-white"
             type="text"
             placeholder="Last Name*"
           />
           <input
-            class="p-2 rounded-xl w-full"
+            class="p-2 rounded-xl w-full bg-white"
             type="text"
             placeholder="First Name*"
           />
           <input
-            class="p-2 rounded-xl w-full"
+            class="p-2 rounded-xl w-full bg-white"
             type="text"
             placeholder="Phone Number*"
           />
           <input
-            class="p-2 rounded-xl w-full"
+            class="p-2 rounded-xl w-full bg-white"
             type="text"
             placeholder="Email Address*"
           />
           <textarea
-            class="col-span-2 p-4 rounded-xl w-full"
+            class="col-span-2 p-4 rounded-xl w-full bg-white"
             name=""
             id=""
             rows="7"
